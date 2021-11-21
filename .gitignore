@@ -2,3 +2,5 @@
 /.vscode
 shared-security-key.txt
 *.json
+*.ds
+*.bson

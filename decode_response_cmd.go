@@ -14,7 +14,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-type DecodeCmd struct {
+type DecodeResponseCmd struct {
 	File              *os.File `arg:"" help:"Path to encrypted json response file." name:"file"`
 	SharedSecurityKey *os.File `help:"Path to shared security key file for decoding responses after login." name:"shared-security-key"`
 }
@@ -33,7 +33,7 @@ func RemovePadding(inCiphertext []byte) []byte {
 	return inCiphertext
 }
 
-func (d *DecodeCmd) TryDecode(inCiphertext []byte, key []byte, iv []byte) (string, error) {
+func (d *DecodeResponseCmd) TryDecode(inCiphertext []byte, key []byte, iv []byte) (string, error) {
 	block, err := aes.NewCipher(key)
 	if err != nil {
 		return "", errors.Wrap(err, "aes.NewCipher failed")
@@ -62,7 +62,7 @@ func (d *DecodeCmd) TryDecode(inCiphertext []byte, key []byte, iv []byte) (strin
 	return string(pmBytes), nil
 }
 
-func (d *DecodeCmd) Run() error {
+func (d *DecodeResponseCmd) Run() error {
 	inBytes, err := ioutil.ReadAll(d.File)
 	if err != nil {
 		return errors.Wrap(err, "Failed to read input file")

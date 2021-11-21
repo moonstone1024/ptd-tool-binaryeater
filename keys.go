@@ -21,3 +21,6 @@ func GetApiKeyNext(idx int) string {
 	idx = (idx + 1) % 4
 	return apiKey0[idx] + apiKey1[idx]
 }
+
+var saveDataKey = []byte("HgJc2tsBsZh3QJRcancefgTnmy6zmgiG")
+var saveDataIV = []byte("ancefgTnmy6zmgiG")
