@@ -9,6 +9,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"os"
+	"strings"
 
 	"github.com/pkg/errors"
 )
@@ -73,7 +74,8 @@ func (d *DecodeCmd) Run() error {
 	if err != nil {
 		return errors.Wrap(err, "json.Unmarshal failed")
 	}
-	inCiphertext, err := base64.StdEncoding.DecodeString(resp.PM)
+	pm := strings.ReplaceAll(resp.PM, "=", "")
+	inCiphertext, err := base64.RawStdEncoding.DecodeString(pm)
 	if err != nil {
 		return errors.Wrap(err, "failed to decode original pm base64")
 	}
