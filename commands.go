@@ -82,6 +82,7 @@ func (d *DecodeCmd) Run() error {
 	var sharedSecurityKey []byte
 	if d.SharedSecurityKey != nil {
 		sharedSecurityKey, err = ioutil.ReadAll(d.SharedSecurityKey)
+		d.SharedSecurityKey.Close()
 		if err != nil {
 			return errors.Wrap(err, "failed to read sharedSecurityKey file")
 		}
