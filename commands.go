@@ -13,19 +13,6 @@ import (
 	"github.com/pkg/errors"
 )
 
-var key0 = [...]string{
-	"mfQMG92mJ6R",
-	"D2L1L1aLJSBjLlLQ3fCdS8at",
-	"52hHwSInpbOVRq",
-	"M88yny3dvB5ZTVHpQD",
-}
-var key1 = [...]string{
-	"MW1LkPfxIrDB7PNTdupvw",
-	"jAWLuydO",
-	"sIQPwGnXVkOhMqks0p",
-	"W7rkDhakfa1PI0",
-}
-
 type DecodeCmd struct {
 	File              *os.File `arg:"" help:"Path to encrypted json response file." name:"file"`
 	SharedSecurityKey *os.File `help:"Path to shared security key file for decoding responses after login." name:"shared-security-key"`
@@ -33,15 +20,6 @@ type DecodeCmd struct {
 
 type PTDResponse struct {
 	PM string `json:"pm"`
-}
-
-func GetApiKey(idx int) string {
-	return key0[idx] + key1[idx]
-}
-
-func GetApiKeyNext(idx int) string {
-	idx = (idx + 1) % 4
-	return key0[idx] + key1[idx]
 }
 
 func RemovePadding(inCiphertext []byte) []byte {
@@ -54,7 +32,7 @@ func RemovePadding(inCiphertext []byte) []byte {
 	return inCiphertext
 }
 
-func TryDecode(inCiphertext []byte, key []byte, iv []byte) (string, error) {
+func (d *DecodeCmd) TryDecode(inCiphertext []byte, key []byte, iv []byte) (string, error) {
 	block, err := aes.NewCipher(key)
 	if err != nil {
 		return "", errors.Wrap(err, "aes.NewCipher failed")
@@ -117,7 +95,7 @@ func (d *DecodeCmd) Run() error {
 			key = []byte(GetApiKeyNext(i))
 		}
 		iv := []byte(GetApiKey(i)[:16])
-		pm, err = TryDecode(inCiphertext, key, iv)
+		pm, err = d.TryDecode(inCiphertext, key, iv)
 		if err != nil {
 			continue
 		}
