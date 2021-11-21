@@ -77,7 +77,7 @@ func TryDecode(inCiphertext []byte, key []byte, iv []byte) (string, error) {
 	}
 	pmBytes, err := ioutil.ReadAll(z)
 	if err != nil {
-		return "", errors.Wrap(err, "failed to decompress resposne data")
+		return "", errors.Wrap(err, "failed to decompress response data")
 	}
 
 	return string(pmBytes), nil
