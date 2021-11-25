@@ -1,4 +1,4 @@
-module gitee.com/binaryeater/ptd-response-decoder
+module gitee.com/binaryeater/ptd-tool
 
 go 1.16
 

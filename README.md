@@ -1,4 +1,4 @@
-# ptd-response-decoder
+# ptd-tool
 
 A tool to decode PTD server responses captured with MITM http proxy tool like Burp suite.
 Based on esterTion's work here. 
@@ -25,14 +25,14 @@ Or you could use `go run .` as well.
 You don't need to give shared key to decode GetNativeToken/Login response. Just throw in json captured with the tool.
 
 ```
-./ptd-response-decoder decode-response Login.json
+./ptd-tool decode-response Login.json
 ```
 
 For other responses, you need to give `--shared-security-key`. The game uses a key unique to each user, to encrypt all requests and responses between your device and server. You can find it in one of responses from sqex-bridge server.
 The key file must be exactly 32 bytes in length.
 
 ```
-./ptd-response-decoder decode-response GetServerTime.json --shared-security-key shared-security-key.txt
+./ptd-tool decode-response GetServerTime.json --shared-security-key shared-security-key.txt
 ```
 
 ### Decoding/Encoding local save data
@@ -42,11 +42,11 @@ Local save data always uses embedded key for encoding/decoding so you don't need
 Encoding:
 
 ```
-./ptd-response-decoder decode-save-data ./OrigSaveData/oiou_0.ds > ./DecodedSaveData/oiou_0.json
+./ptd-tool decode-save-data ./OrigSaveData/oiou_0.ds > ./DecodedSaveData/oiou_0.json
 ```
 
 Decoding:
 
 ```
-./ptd-response-decoder encode-save-data ./DecodedSaveData/oiou_0.json > ./SaveData/oiou_0.ds
+./ptd-tool encode-save-data ./DecodedSaveData/oiou_0.json > ./SaveData/oiou_0.ds
 ```
