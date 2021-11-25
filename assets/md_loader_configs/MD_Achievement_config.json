@@ -1,0 +1,160 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_TextData",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Category",
+      "filter": "1"
+    },
+    {
+      "type": "string",
+      "name": "_PremiseMaster"
+    },
+    {
+      "type": "string",
+      "name": "_PremiseAchieveID"
+    },
+    {
+      "type": "int",
+      "name": "_UnlimitedFlag"
+    },
+    {
+      "type": "int",
+      "name": "_ConditionID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Value1"
+    },
+    {
+      "type": "string",
+      "name": "_Value2"
+    },
+    {
+      "type": "string",
+      "name": "_Value3"
+    },
+    {
+      "type": "string",
+      "name": "_Value4"
+    },
+    {
+      "type": "string",
+      "name": "_Value5"
+    },
+    {
+      "type": "string",
+      "name": "_Value6"
+    },
+    {
+      "type": "string",
+      "name": "_Value7"
+    },
+    {
+      "type": "string",
+      "name": "_Value8"
+    },
+    {
+      "type": "string",
+      "name": "_Value9"
+    },
+    {
+      "type": "string",
+      "name": "_Value10"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType1"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID1"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount1"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType2"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID2"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount2"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType3"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID3"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount3"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType4"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID4"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount4"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType5"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID5"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount5"
+    },
+    {
+      "type": "int",
+      "name": "_BeginnerFlag"
+    },
+    {
+      "type": "int",
+      "name": "_FunctionID"
+    },
+    {
+      "type": "string",
+      "name": "_DetailText"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseDate"
+    },
+    {
+      "type": "string",
+      "name": "_CloseDate"
+    },
+    {
+      "type": "string",
+      "name": "_LoopDay"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_CharacterID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name"
+    },
+    {
+      "type": "int",
+      "name": "_SortingOrder"
+    },
+    {
+      "type": "int",
+      "name": "_Type",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Bunner"
+    },
+    {
+      "type": "string",
+      "name": "_MemoryID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_MemoryText"
+    },
+    {
+      "type": "int",
+      "name": "_FeelA"
+    },
+    {
+      "type": "int",
+      "name": "_FeelB"
+    },
+    {
+      "type": "int",
+      "name": "_FeelC"
+    },
+    {
+      "type": "int",
+      "name": "_FeelD"
+    },
+    {
+      "type": "string",
+      "name": "_CostumeID"
+    },
+    {
+      "type": "string",
+      "name": "_AdventureTalkSceneNo"
+    },
+    {
+      "type": "int",
+      "name": "_RealCoinFree"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemType1"
+    },
+    {
+      "type": "string",
+      "name": "_RewardItemID1"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemNum1"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemType2"
+    },
+    {
+      "type": "string",
+      "name": "_RewardItemID2"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemNum2"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemType3"
+    },
+    {
+      "type": "string",
+      "name": "_RewardItemID3"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemNum3"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemType4"
+    },
+    {
+      "type": "string",
+      "name": "_RewardItemID4"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemNum4"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemType5"
+    },
+    {
+      "type": "string",
+      "name": "_RewardItemID5"
+    },
+    {
+      "type": "int",
+      "name": "_RewardItemNum5"
+    }
+  ]
+}

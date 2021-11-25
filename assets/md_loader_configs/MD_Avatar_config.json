@@ -1,0 +1,70 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Rarity"
+    },
+    {
+      "type": "int",
+      "name": "_IsShowCollection"
+    },
+    {
+      "type": "string",
+      "name": "_GraphicID"
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Detail"
+    },
+    {
+      "type": "int",
+      "name": "_Part"
+    },
+    {
+      "type": "string",
+      "name": "_HairModelID"
+    },
+    {
+      "type": "string",
+      "name": "_HeadModelID"
+    },
+    {
+      "type": "string",
+      "name": "_FaceModelID"
+    },
+    {
+      "type": "string",
+      "name": "_EarModelID"
+    },
+    {
+      "type": "string",
+      "name": "_UpBodyCostumeModelID"
+    },
+    {
+      "type": "string",
+      "name": "_LowBodyCostumeModelID"
+    },
+    {
+      "type": "string",
+      "name": "_CanEquipCharacterIds"
+    },
+    {
+      "type": "int",
+      "name": "_EquippedReaction"
+    },
+    {
+      "type": "string",
+      "name": "_ExceptionHandling"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Detail"
+    },
+    {
+      "type": "string",
+      "name": "_GraphicID"
+    },
+    {
+      "type": "int",
+      "name": "_IsShowCollection"
+    },
+    {
+      "type": "int",
+      "name": "_ShowCollectionNo"
+    },
+    {
+      "type": "int",
+      "name": "_Default"
+    },
+    {
+      "type": "int",
+      "name": "_Rarity",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_WeaponKind"
+    },
+    {
+      "type": "int",
+      "name": "_Prototype"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_AttackLevel1"
+    },
+    {
+      "type": "int",
+      "name": "_AttackLevelMax"
+    },
+    {
+      "type": "int",
+      "name": "_UltraArtsAttackLevel1"
+    },
+    {
+      "type": "int",
+      "name": "_UltraArtsAttackLevelMax"
+    },
+    {
+      "type": "int",
+      "name": "_PiyoAttackLevel1"
+    },
+    {
+      "type": "int",
+      "name": "_PiyoAttackLevelMax"
+    },
+    {
+      "type": "int",
+      "name": "_UltraArtsPiyoAttack"
+    },
+    {
+      "type": "int",
+      "name": "_FeelCorrection"
+    },
+    {
+      "type": "int",
+      "name": "_UltraArtslFeelCorrection"
+    },
+    {
+      "type": "int",
+      "name": "_GoodExtraPoint"
+    },
+    {
+      "type": "int",
+      "name": "_JustExtraPoint"
+    },
+    {
+      "type": "int",
+      "name": "_AppearTimeUI"
+    },
+    {
+      "type": "int",
+      "name": "_JustFrame"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBestRange"
+    },
+    {
+      "type": "string",
+      "name": "_TimingBestID"
+    },
+    {
+      "type": "int",
+      "name": "_TimingGoodRange"
+    },
+    {
+      "type": "int",
+      "name": "_ReceptionTimingHammer"
+    },
+    {
+      "type": "string",
+      "name": "_ExpTableID"
+    },
+    {
+      "type": "int",
+      "name": "_MaxLevel"
+    },
+    {
+      "type": "string",
+      "name": "_SkillContent1"
+    },
+    {
+      "type": "string",
+      "name": "_SkillContent2"
+    },
+    {
+      "type": "string",
+      "name": "_SkillContent3"
+    },
+    {
+      "type": "int",
+      "name": "_SellGameCoin"
+    },
+    {
+      "type": "string",
+      "name": "_ModelID"
+    },
+    {
+      "type": "int",
+      "name": "_BreakRank"
+    },
+    {
+      "type": "int",
+      "name": "_PiyoAttackRate"
+    },
+    {
+      "type": "string",
+      "name": "_SkillLotsTable0"
+    },
+    {
+      "type": "string",
+      "name": "_SkillLotsTable1"
+    },
+    {
+      "type": "string",
+      "name": "_SkillLotsTable2"
+    },
+    {
+      "type": "string",
+      "name": "_SkillLotsTable3"
+    },
+    {
+      "type": "string",
+      "name": "_SkillLotsTable4"
+    },
+    {
+      "type": "int",
+      "name": "_InitMaxLevel"
+    },
+    {
+      "type": "int",
+      "name": "_GainExp"
+    },
+    {
+      "type": "int",
+      "name": "_SkillSelectType1"
+    },
+    {
+      "type": "int",
+      "name": "_SkillSelectType2"
+    },
+    {
+      "type": "int",
+      "name": "_SkillSelectType3"
+    },
+    {
+      "type": "int",
+      "name": "_SkillSelectType4"
+    },
+    {
+      "type": "int",
+      "name": "_limitBreakItemNum"
+    },
+    {
+      "type": "string",
+      "name": "_CategoryID"
+    },
+    {
+      "type": "int",
+      "name": "_CraftSortNo"
+    },
+    {
+      "type": "int",
+      "name": "_IsCheckRecipe"
+    }
+  ]
+}

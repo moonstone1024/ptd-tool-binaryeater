@@ -1,0 +1,435 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_EventID"
+    },
+    {
+      "type": "string",
+      "name": "_StageID",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Sort"
+    },
+    {
+      "type": "string",
+      "name": "_QuestName",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_IdentificationID"
+    },
+    {
+      "type": "string",
+      "name": "_BGGraphicID"
+    },
+    {
+      "type": "string",
+      "name": "_RecommendLv"
+    },
+    {
+      "type": "int",
+      "name": "_Difficulty"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseQuestID"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseMemoryID1"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseMemoryID2"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseMemoryID3"
+    },
+    {
+      "type": "int",
+      "name": "_ConsumeType"
+    },
+    {
+      "type": "int",
+      "name": "_Stamina"
+    },
+    {
+      "type": "int",
+      "name": "_StaminaRateMax"
+    },
+    {
+      "type": "string",
+      "name": "_ConsumeItemId"
+    },
+    {
+      "type": "int",
+      "name": "_ConsumeItemCount"
+    },
+    {
+      "type": "int",
+      "name": "_Retry"
+    },
+    {
+      "type": "int",
+      "name": "_IsRecordQuestResult"
+    },
+    {
+      "type": "int",
+      "name": "_FriendControl"
+    },
+    {
+      "type": "int",
+      "name": "_RequireLv"
+    },
+    {
+      "type": "string",
+      "name": "_RequireCharacterID1"
+    },
+    {
+      "type": "string",
+      "name": "_RequireCharacterID2"
+    },
+    {
+      "type": "int",
+      "name": "_ContinueMaxCount"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseDate"
+    },
+    {
+      "type": "string",
+      "name": "_CloseDate"
+    },
+    {
+      "type": "int",
+      "name": "_RealCoinFree"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType1"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID1"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount1"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType2"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID2"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount2"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType3"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID3"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount3"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType4"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID4"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount4"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType5"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID5"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount5"
+    },
+    {
+      "type": "string",
+      "name": "_QuestMissionID1"
+    },
+    {
+      "type": "string",
+      "name": "_QuestMissionID2"
+    },
+    {
+      "type": "string",
+      "name": "_QuestMissionID3"
+    },
+    {
+      "type": "string",
+      "name": "_EnemyGroupID"
+    },
+    {
+      "type": "string",
+      "name": "_MainScenarioID"
+    },
+    {
+      "type": "string",
+      "name": "_BackGroundID"
+    },
+    {
+      "type": "string",
+      "name": "_BackGroundID_2D"
+    },
+    {
+      "type": "int",
+      "name": "_CostumeExp"
+    },
+    {
+      "type": "int",
+      "name": "_WeaponExp"
+    },
+    {
+      "type": "int",
+      "name": "_Exp"
+    },
+    {
+      "type": "int",
+      "name": "_GameCoin"
+    },
+    {
+      "type": "int",
+      "name": "_FeelA"
+    },
+    {
+      "type": "int",
+      "name": "_FeelB"
+    },
+    {
+      "type": "int",
+      "name": "_FeelC"
+    },
+    {
+      "type": "int",
+      "name": "_FeelD"
+    },
+    {
+      "type": "string",
+      "name": "_EventControlID"
+    },
+    {
+      "type": "int",
+      "name": "_EventPoint"
+    },
+    {
+      "type": "int",
+      "name": "_TurnBonusBase"
+    },
+    {
+      "type": "int",
+      "name": "_TurnBonusTurn"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusBase"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusCondition_S"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusMag_S"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusCondition_A"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusMag_A"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusCondition_B"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusMag_B"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusCondition_C"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusMag_C"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusCondition_D"
+    },
+    {
+      "type": "int",
+      "name": "_HPBonusMag_D"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusBase"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusDamage"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusCondition_S"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusMag_S"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusCondition_A"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusMag_A"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusCondition_B"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusMag_B"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusCondition_C"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusMag_C"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusCondition_D"
+    },
+    {
+      "type": "int",
+      "name": "_DamageBonusMag_D"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusBase"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusCondition_S"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusMag_S"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusCondition_A"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusMag_A"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusCondition_B"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusMag_B"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusCondition_C"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusMag_C"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusCondition_D"
+    },
+    {
+      "type": "int",
+      "name": "_TimingBonusMag_D"
+    },
+    {
+      "type": "int",
+      "name": "_Star1"
+    },
+    {
+      "type": "int",
+      "name": "_Star2"
+    },
+    {
+      "type": "int",
+      "name": "_Star3"
+    },
+    {
+      "type": "int",
+      "name": "_Star4"
+    },
+    {
+      "type": "int",
+      "name": "_Star5"
+    },
+    {
+      "type": "int",
+      "name": "_Star6"
+    },
+    {
+      "type": "int",
+      "name": "_Star7"
+    },
+    {
+      "type": "int",
+      "name": "_Star8"
+    },
+    {
+      "type": "int",
+      "name": "_Star9"
+    },
+    {
+      "type": "int",
+      "name": "_Star10"
+    },
+    {
+      "type": "string",
+      "name": "_CollaborationQuest"
+    }
+  ]
+}

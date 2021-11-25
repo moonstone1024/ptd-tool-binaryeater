@@ -1,0 +1,266 @@
+{
+  "addIndex": true,
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Detail"
+    },
+    {
+      "type": "int",
+      "name": "_IsShowCollection"
+    },
+    {
+      "type": "int",
+      "name": "_ShowCollectionNo"
+    },
+    {
+      "type": "int",
+      "name": "_Default"
+    },
+    {
+      "type": "string",
+      "name": "_GraphicID"
+    },
+    {
+      "type": "string",
+      "name": "_CanEquipCharacterIds"
+    },
+    {
+      "type": "int",
+      "name": "_Rarity",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_WeaponKind"
+    },
+    {
+      "type": "int",
+      "name": "_ItemKindID",
+      "include": false,
+      "filter": "0"
+    },
+    {
+      "type": "int",
+      "name": "_InitMaxLevel"
+    },
+    {
+      "type": "int",
+      "name": "_MaxLevel"
+    },
+    {
+      "type": "string",
+      "name": "_ExpTableID"
+    },
+    {
+      "type": "int",
+      "name": "_Element"
+    },
+    {
+      "type": "int",
+      "name": "_HPLevel1"
+    },
+    {
+      "type": "int",
+      "name": "_HPLevelMax"
+    },
+    {
+      "type": "int",
+      "name": "_AttackLevel1"
+    },
+    {
+      "type": "int",
+      "name": "_AttackLevelMax"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillIDLB1"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillIDLB2"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillIDLB3"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillIDLB4"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID2"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID2LB1"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID2LB2"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID2LB3"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID2LB4"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID3"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID3LB1"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID3LB2"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID3LB3"
+    },
+    {
+      "type": "string",
+      "name": "_ActiveSkillID3LB4"
+    },
+    {
+      "type": "string",
+      "name": "_LeaderSkillID"
+    },
+    {
+      "type": "string",
+      "name": "_LeaderSkillIDLB1"
+    },
+    {
+      "type": "string",
+      "name": "_LeaderSkillIDLB2"
+    },
+    {
+      "type": "string",
+      "name": "_LeaderSkillIDLB3"
+    },
+    {
+      "type": "string",
+      "name": "_LeaderSkillIDLB4"
+    },
+    {
+      "type": "int",
+      "name": "_GainExp"
+    },
+    {
+      "type": "int",
+      "name": "_SellGameCoin"
+    },
+    {
+      "type": "int",
+      "name": "_SellDollsPoint"
+    },
+    {
+      "type": "int",
+      "name": "_SellRealCoinFree"
+    },
+    {
+      "type": "string",
+      "name": "_UnLockSubScenarioID"
+    },
+    {
+      "type": "string",
+      "name": "_SpecialID"
+    },
+    {
+      "type": "string",
+      "name": "_LimitbreakBonusHPID"
+    },
+    {
+      "type": "string",
+      "name": "_LimitbreakBonusATKID"
+    },
+    {
+      "type": "int",
+      "name": "_MaxLimitbreakCount"
+    },
+    {
+      "type": "int",
+      "name": "_IsSubLimited"
+    },
+    {
+      "type": "string",
+      "name": "_AvatarSetID"
+    },
+    {
+      "type": "string",
+      "name": "_AnotherAvatarSetID1"
+    },
+    {
+      "type": "string",
+      "name": "_AnotherAvatarSetID2"
+    },
+    {
+      "type": "string",
+      "name": "_AnotherAvatarSetID3"
+    },
+    {
+      "type": "string",
+      "name": "_AnotherAvatarSetID4"
+    },
+    {
+      "type": "string",
+      "name": "_AnotherAvatarSetID5"
+    },
+    {
+      "type": "string",
+      "name": "_AnotherAvatarSetID6"
+    },
+    {
+      "type": "string",
+      "name": "_AnotherAvatarSetID7"
+    },
+    {
+      "type": "string",
+      "name": "_AnotherAvatarSetID8"
+    },
+    {
+      "type": "int",
+      "name": "_CostumeVersion"
+    },
+    {
+      "type": "string",
+      "name": "_SwordWeaponID"
+    },
+    {
+      "type": "string",
+      "name": "_HummerWeaponID"
+    },
+    {
+      "type": "string",
+      "name": "_GunWeaponID"
+    },
+    {
+      "type": "string",
+      "name": "_AwakeLevelMaster"
+    },
+    {
+      "type": "int",
+      "name": "_AdditionalType"
+    }
+  ]
+}

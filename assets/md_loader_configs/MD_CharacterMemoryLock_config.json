@@ -1,0 +1,27 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Detail"
+    },
+    {
+      "type": "string",
+      "name": "_KeyID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_CommuID"
+    }
+  ]
+}
