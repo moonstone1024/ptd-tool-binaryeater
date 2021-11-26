@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 set -eu
-: "$MD_DIR"
+: "$MD_SRC_DIR"
+: "$MD_DEST_DIR"
+SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
 
 decode_md() {
-  go run . decode-md "$MD_DIR/$1" --config "./assets/md_loader_configs/$2" | jq > "./assets/md/$3"
+  mkdir -p "$(dirname "$MD_DEST_DIR/$3")"
+  "$SCRIPT_DIR/ptd-tool" decode-md "$MD_SRC_DIR/$1" --config "$SCRIPT_DIR/assets/md_loader_configs/$2" | jq > "$MD_DEST_DIR/$3"
   return "$?"
 }
 

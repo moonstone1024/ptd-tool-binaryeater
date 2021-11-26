@@ -81,7 +81,7 @@ First, decode MD files with the following script first to generate required JSON
 Replace `/path/to/md-dir` with actual md directory path.
 
 ```
-MD_DIR=/path/to/md-dir/md ./generate-md-assets.sh
+MD_SRC_DIR=/path/to/md-dir/md MD_DEST_DIR=./out/md/ ./generate-md-assets.sh
 ```
 
 Then generate response with this command. Don't send json formatted with jq to the device if you want to use it with ptd-hook. The app does not accept formatted JSON.
