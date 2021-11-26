@@ -42,7 +42,8 @@
     },
     {
       "type": "int",
-      "name": "_WeaponKind"
+      "name": "_WeaponKind",
+      "include": true
     },
     {
       "type": "int",
@@ -63,7 +64,8 @@
     },
     {
       "type": "int",
-      "name": "_Element"
+      "name": "_Element",
+      "include": true
     },
     {
       "type": "int",
