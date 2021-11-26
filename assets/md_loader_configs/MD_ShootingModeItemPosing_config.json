@@ -1,0 +1,34 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Text"
+    },
+    {
+      "type": "string",
+      "name": "_CharacterId"
+    },
+    {
+      "type": "string",
+      "name": "_PosingId"
+    },
+    {
+      "type": "string",
+      "name": "_Icon"
+    },
+    {
+      "type": "int",
+      "name": "_IsDefault"
+    }
+  ]
+}

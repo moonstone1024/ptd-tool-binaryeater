@@ -22,7 +22,6 @@ func (m *mdLoader) load(config *MDLoaderConfig) ([]map[string]interface{}, error
 	allEntries := make([]map[string]interface{}, 0)
 	for i := 0; i < entryCount; i++ {
 		entry := map[string]interface{}{}
-		addToEntries := true
 		for _, field := range config.Fields {
 			value, err := m.loadField(field)
 			if err != nil {
@@ -31,37 +30,16 @@ func (m *mdLoader) load(config *MDLoaderConfig) ([]map[string]interface{}, error
 			if field.Include {
 				entry[field.Name] = value
 			}
-			if addToEntries {
-				addToEntries = m.applyFilter(value, field)
-			}
 		}
 
 		if config.AddIndex {
 			entry["index"] = i + 1
 		}
 
-		if addToEntries {
-			allEntries = append(allEntries, entry)
-		}
+		allEntries = append(allEntries, entry)
 	}
 
 	return allEntries, nil
-}
-
-func (m *mdLoader) applyFilter(value interface{}, field MDField) bool {
-	if field.Filter == nil {
-		return true
-	}
-
-	var strValue string
-	switch value := value.(type) {
-	case int:
-		strValue = fmt.Sprintf("%d", value)
-	case string:
-		strValue = value
-	}
-
-	return strValue == *field.Filter
 }
 
 func (m *mdLoader) loadEntryCount() (int, error) {

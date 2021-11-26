@@ -14,10 +14,9 @@ type MDLoaderConfig struct {
 }
 
 type MDField struct {
-	Type    string  `json:"type"`
-	Name    string  `json:"name"`
-	Include bool    `json:"include"`
-	Filter  *string `json:"filter"`
+	Type    string `json:"type"`
+	Name    string `json:"name"`
+	Include bool   `json:"include"`
 }
 
 func LoadMDLoaderConfigFromFile(file *os.File) (*MDLoaderConfig, error) {

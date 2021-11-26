@@ -47,8 +47,7 @@
     {
       "type": "int",
       "name": "_ItemKindID",
-      "include": false,
-      "filter": "0"
+      "include": true
     },
     {
       "type": "int",

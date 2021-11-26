@@ -1,0 +1,91 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_CharacterID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_PanelGraphicID"
+    },
+    {
+      "type": "int",
+      "name": "_PanelGraphicID2"
+    },
+    {
+      "type": "int",
+      "name": "_IdolType"
+    },
+    {
+      "type": "string",
+      "name": "_PanelFontRGB"
+    },
+    {
+      "type": "string",
+      "name": "_Detail"
+    },
+    {
+      "type": "int",
+      "name": "_FeelA",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_FeelB",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_FeelC",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_FeelD",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_HP"
+    },
+    {
+      "type": "int",
+      "name": "_Attack"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID1"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID2"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID3"
+    },
+    {
+      "type": "string",
+      "name": "_RoomBgmID"
+    },
+    {
+      "type": "string",
+      "name": "_EffectID"
+    },
+    {
+      "type": "int",
+      "name": "_IdolClassVersion"
+    }
+  ]
+}

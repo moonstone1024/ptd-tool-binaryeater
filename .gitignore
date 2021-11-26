@@ -3,3 +3,4 @@
 shared-security-key.txt
 *.ds
 *.bson
+/out

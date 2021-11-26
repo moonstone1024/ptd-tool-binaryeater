@@ -5,10 +5,11 @@ import (
 )
 
 type CLI struct {
-	DecodeResponse DecodeResponseCmd `cmd:"" help:"Decodes encrypted response sent by PTD server. Omit when decoding GetNativeToken/Login response."`
-	DecodeSaveData DecodeSaveDataCmd `cmd:"" help:"Decodes local save data to JSON."`
-	EncodeSaveData EncodeSaveDataCmd `cmd:"" help:"Encodes local save data back to encrypted BSON."`
-	DecodeMD       DecodeMDCmd       `cmd:"" help:"Decodes MD."`
+	DecodeResponse        DecodeResponseCmd        `cmd:"" help:"Decodes encrypted response sent by PTD server. Omit when decoding GetNativeToken/Login response."`
+	DecodeSaveData        DecodeSaveDataCmd        `cmd:"" help:"Decodes local save data to JSON."`
+	EncodeSaveData        EncodeSaveDataCmd        `cmd:"" help:"Encodes local save data back to encrypted BSON."`
+	DecodeMD              DecodeMDCmd              `cmd:"" help:"Decodes MD."`
+	GenerateLoginResponse GenerateLoginResponseCmd `cmd:"" help:"Generates Login.json."`
 }
 
 func main() {

@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Detail",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_IsShowCollection"
+    },
+    {
+      "type": "int",
+      "name": "_ShowCollectionNo"
+    },
+    {
+      "type": "string",
+      "name": "_GraphicID"
+    },
+    {
+      "type": "int",
+      "name": "_Rarity",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Element"
+    },
+    {
+      "type": "int",
+      "name": "_GainExp"
+    },
+    {
+      "type": "int",
+      "name": "_SellGameCoin"
+    }
+  ]
+}

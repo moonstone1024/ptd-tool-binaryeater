@@ -13,7 +13,7 @@
     {
       "type": "int",
       "name": "_Category",
-      "filter": "1"
+      "include": true
     },
     {
       "type": "string",

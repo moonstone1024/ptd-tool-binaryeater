@@ -1,0 +1,42 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Text"
+    },
+    {
+      "type": "string",
+      "name": "_BackGroundId"
+    },
+    {
+      "type": "string",
+      "name": "_AmbientColorID"
+    },
+    {
+      "type": "int",
+      "name": "_X"
+    },
+    {
+      "type": "int",
+      "name": "_Y"
+    },
+    {
+      "type": "string",
+      "name": "_Icon"
+    },
+    {
+      "type": "int",
+      "name": "_IsDefault"
+    }
+  ]
+}
