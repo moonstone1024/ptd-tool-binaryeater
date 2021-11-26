@@ -24,7 +24,8 @@
     },
     {
       "type": "string",
-      "name": "_Detail"
+      "name": "_Detail",
+      "include": true
     },
     {
       "type": "int",

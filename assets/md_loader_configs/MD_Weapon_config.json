@@ -1,4 +1,5 @@
 {
+  "addIndex": true,
   "fields": [
     {
       "type": "string",
