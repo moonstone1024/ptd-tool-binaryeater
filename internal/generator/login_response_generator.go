@@ -526,7 +526,7 @@ func (l *loginResponseGenerator) getCharacterStatusListAsString() string {
 			IdolClass: l.cfg.IDolClasses["c008"],
 			LevelA:    60,
 			LevelB:    60,
-			LevelC:    60,
+			LevelC:    70,
 			LevelD:    70,
 			Cmp:       []interface{}{},
 			MaxLv:     100,
