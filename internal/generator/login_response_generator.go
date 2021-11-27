@@ -203,7 +203,12 @@ func (l *loginResponseGenerator) loadMDJson(filename string, v interface{}) {
 }
 
 func (l *loginResponseGenerator) getCharacterExpResourceAsString() string {
-	r := CharacterExpResource{}
+	r := CharacterExpResource{
+		A: 999999999,
+		B: 999999999,
+		C: 999999999,
+		D: 999999999,
+	}
 	bytes, err := json.Marshal(r)
 	if err != nil {
 		panic(err)
