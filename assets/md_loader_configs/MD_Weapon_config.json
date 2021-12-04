@@ -128,15 +128,18 @@
     },
     {
       "type": "string",
-      "name": "_SkillContent1"
+      "name": "_SkillContent1",
+      "include": true
     },
     {
       "type": "string",
-      "name": "_SkillContent2"
+      "name": "_SkillContent2",
+      "include": true
     },
     {
       "type": "string",
-      "name": "_SkillContent3"
+      "name": "_SkillContent3",
+      "include": true
     },
     {
       "type": "int",

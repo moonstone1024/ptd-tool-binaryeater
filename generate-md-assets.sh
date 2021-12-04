@@ -41,3 +41,4 @@ decode_md MD_ShootingModeItemMotion.snd MD_ShootingModeItemMotion_config.json MD
 decode_md MD_ShootingModeItemPosing.snd MD_ShootingModeItemPosing_config.json MD_ShootingModeItemPosing.json
 decode_md MD_CostumeStone.snd MD_CostumeStone_config.json MD_CostumeStone.json
 decode_md MD_WeaponStone.snd MD_WeaponStone_config.json MD_WeaponStone.json
+decode_md MD_WeaponSkillContent.snd MD_WeaponSkillContent_config.json MD_WeaponSkillContent.json

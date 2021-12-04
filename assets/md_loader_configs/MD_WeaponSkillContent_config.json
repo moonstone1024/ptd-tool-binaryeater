@@ -1,0 +1,279 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_SkillID1",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability1"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID2",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability2"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID3",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability3"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID4",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability4"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID5",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability5"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID6",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability6"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID7",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability7"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID8",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability8"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID9",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability9"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID10",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability10"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID11",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability11"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID12",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability12"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID13",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability13"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID14",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability14"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID15",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability150"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID164",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability168"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID17C",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability17"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID18",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability18"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID19",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability19"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID20",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability20"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID21",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability21"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID22",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability22"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID23",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability23"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID24",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability24"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID25",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability25"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID26",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability26"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID27",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability27"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID28",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability28"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID29",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability29"
+    },
+    {
+      "type": "string",
+      "name": "_SkillID30",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability30"
+    }
+  ]
+}

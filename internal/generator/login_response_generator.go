@@ -316,6 +316,13 @@ func (l *loginResponseGenerator) createWeaponUIDToWeaponMap(inWeapons []MD_Weapo
 	if err != nil {
 		panic(err)
 	}
+	inWeaponSkillContents := make([]MD_WeaponSkillContent, 0)
+	l.loadMDJson("MD_WeaponSkillContent.json", &inWeaponSkillContents)
+	weaponSkillContenIDMap := map[string]MD_WeaponSkillContent{}
+	for _, v := range inWeaponSkillContents {
+		weaponSkillContenIDMap[v.ID] = v
+	}
+
 	index := 0
 	weapons := map[string]TD_UserWeapon{}
 	t := l.cfg.ServerTime.Time
@@ -328,6 +335,20 @@ func (l *loginResponseGenerator) createWeaponUIDToWeaponMap(inWeapons []MD_Weapo
 		if weapon.ItemType != 1 {
 			continue
 		}
+		skillID1 := " "
+		skillID2 := " "
+		skillID3 := " "
+
+		if v, ok := weaponSkillContenIDMap[weapon.SkillContent1]; ok {
+			skillID1 = v.SkillID1
+		}
+		if v, ok := weaponSkillContenIDMap[weapon.SkillContent2]; ok {
+			skillID2 = v.SkillID1
+		}
+		if v, ok := weaponSkillContenIDMap[weapon.SkillContent3]; ok {
+			skillID3 = v.SkillID1
+		}
+
 		weapons[weaponUID] = TD_UserWeapon{
 			UCR:                  " ",
 			WeaponUId:            weaponUID,
@@ -342,9 +363,9 @@ func (l *loginResponseGenerator) createWeaponUIDToWeaponMap(inWeapons []MD_Weapo
 			LimitBreakSkillTable: nil,
 			UpdateDate:           t.Format(serverTimeFormat),
 			WeaponExp:            weaponRarities[weapon.Rarity].MaxExp,
-			SkillId1:             " ",
-			SkillId2:             " ",
-			SkillId3:             " ",
+			SkillId1:             skillID1,
+			SkillId2:             skillID2,
+			SkillId3:             skillID3,
 			SkillId4:             " ",
 			SkillId5:             " ",
 			SkillId6:             " ",
