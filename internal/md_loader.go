@@ -21,15 +21,9 @@ func (m *mdLoader) load(config *MDLoaderConfig) ([]map[string]interface{}, error
 
 	allEntries := make([]map[string]interface{}, 0)
 	for i := 0; i < entryCount; i++ {
-		entry := map[string]interface{}{}
-		for _, field := range config.Fields {
-			value, err := m.loadField(field)
-			if err != nil {
-				return nil, errors.Wrap(err, fmt.Sprintf("Failed to load a field. entry: %d/%d, name: %s", i, entryCount, field.Name))
-			}
-			if field.Include {
-				entry[field.Name] = value
-			}
+		entry, err := m.loadEntry(config.Fields)
+		if err != nil {
+			return nil, errors.Wrap(err, fmt.Sprintf("Failed to load a field. entry: %d/%d", i, entryCount))
 		}
 
 		if config.AddIndex {
@@ -40,6 +34,21 @@ func (m *mdLoader) load(config *MDLoaderConfig) ([]map[string]interface{}, error
 	}
 
 	return allEntries, nil
+}
+
+func (m *mdLoader) loadEntry(fields []MDField) (map[string]interface{}, error) {
+	entry := map[string]interface{}{}
+	for _, field := range fields {
+		value, err := m.loadField(field)
+		if err != nil {
+			return nil, err
+		}
+		if field.Include {
+			entry[field.Name] = value
+		}
+	}
+
+	return entry, nil
 }
 
 func (m *mdLoader) loadEntryCount() (int, error) {
@@ -79,13 +88,13 @@ func (m *mdLoader) loadField(field MDField) (interface{}, error) {
 		count, err := binary.ReadUvarint(m.byteReader)
 		if err != nil {
 			pos, _ := m.byteReader.Seek(0, io.SeekCurrent)
-			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read string length at %d", pos))
+			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read string length for %s at %d", field.Name, pos))
 		}
 		b := make([]byte, count)
 		_, err = io.ReadAtLeast(m.byteReader, b, int(count))
 		if err != nil {
 			pos, _ := m.byteReader.Seek(0, io.SeekCurrent)
-			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read string value at %d", pos))
+			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read string value for %s at %d", field.Name, pos))
 		}
 		obfuscatedString := string(b)
 		return m.decodeObfuscatedString([]rune(obfuscatedString)), nil
@@ -94,9 +103,35 @@ func (m *mdLoader) loadField(field MDField) (interface{}, error) {
 		_, err := io.ReadAtLeast(m.byteReader, b, 4)
 		if err != nil {
 			pos, _ := m.byteReader.Seek(0, io.SeekCurrent)
-			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read int value at %d", pos))
+			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read int value for %s at %d", field.Name, pos))
 		}
 		return m.decodeObfuscatedInt(int(binary.LittleEndian.Uint32(b))), nil
+	case "float":
+		var d float32
+		err := binary.Read(m.byteReader, binary.LittleEndian, &d)
+		if err != nil {
+			pos, _ := m.byteReader.Seek(0, io.SeekCurrent)
+			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read float value for %s at %d", field.Name, pos))
+		}
+		return d, nil
+	case "list":
+		b := make([]byte, 4)
+		_, err := io.ReadAtLeast(m.byteReader, b, 4)
+		if err != nil {
+			pos, _ := m.byteReader.Seek(0, io.SeekCurrent)
+			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read list size for %s at %d", field.Name, pos))
+		}
+		listSize := int(binary.LittleEndian.Uint32(b))
+		entries := make([]map[string]interface{}, listSize)
+		for i := 0; i < listSize; i++ {
+			entry, err := m.loadEntry(field.Fields)
+			if err != nil {
+				pos, _ := m.byteReader.Seek(0, io.SeekCurrent)
+				return nil, errors.Wrap(err, fmt.Sprintf("Failed to read list elements for %s at %d", field.Name, pos))
+			}
+			entries[i] = entry
+		}
+		return entries, nil
 	}
 
 	return nil, errors.Errorf("Unknown field type: %s", field.Type)

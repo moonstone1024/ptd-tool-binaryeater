@@ -1,0 +1,121 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_CommuID",
+      "include": true
+    },
+    {
+      "type": "list",
+      "name": "_CommuList",
+      "include": true,
+      "fields": [
+        {
+          "type": "string",
+          "name": "_Tag",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_BaseMotionID",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_FaceMotionID",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_LipMotionID",
+          "include": true
+        },
+        {
+          "type": "int",
+          "name": "_FriendshipPoint",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Emotion",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Voice",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Text",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_TagJump",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Choices1",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Choices1TagJump",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Choices2",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Choices2TagJump",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Choices3",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_Choices3TagJump",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_BGM",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_SE",
+          "include": true
+        },
+        {
+          "type": "int",
+          "name": "_Vibration",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_ScreenEffect",
+          "include": true
+        },
+        {
+          "type": "float",
+          "name": "_CharaRotate",
+          "include": true
+        },
+        {
+          "type": "string",
+          "name": "_CharaEyeTrackCamera",
+          "include": true
+        }
+      ]
+    }
+  ]
+}
