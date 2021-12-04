@@ -68,7 +68,7 @@ func (l *loginResponseGenerator) generate() *LoginResponse {
 			AssetBundleVersion:    95500,
 			AssetBundleVersion2:   129900,
 			RealCoin:              0,
-			RealCoinFree:          0,
+			RealCoinFree:          10000,
 		},
 		TransData: TransData{
 			User: TD_User{
