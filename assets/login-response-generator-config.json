@@ -2,6 +2,7 @@
   "serverTime": "2021-10-29 10:00:00",
   "costumeUIDSalt": "q6jjTIP873BRdVZ4ouAp7Q",
   "weaponUIDSalt": "W4Q5JYrsZLwlTykn8KLbVA",
+  "enableDebugStockWeapons": false,
   "equipmentAvatarsList": {
     "c001": {
       "1": "AV5003_c001_A_0",

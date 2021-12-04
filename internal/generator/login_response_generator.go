@@ -16,13 +16,14 @@ type loginResponseGenerator struct {
 }
 
 type LoginResponseGeneratorConfig struct {
-	ServerTime           CustomTime                   `json:"serverTime"`
-	CostumeUIDSalt       string                       `json:"costumeUIDSalt"`
-	WeaponUIDSalt        string                       `json:"weaponUIDSalt"`
-	EquipmentAvatarsList map[string]map[string]string `json:"equipmentAvatarsList"`
-	Teams                map[string]TD_User_Team      `json:"teams"`
-	IDolClasses          map[string]string            `json:"idolClasses"`
-	FavoriteCharacterId  string                       `json:"favoriteCharacterId"`
+	ServerTime              CustomTime                   `json:"serverTime"`
+	CostumeUIDSalt          string                       `json:"costumeUIDSalt"`
+	WeaponUIDSalt           string                       `json:"weaponUIDSalt"`
+	EnableDebugStockWeapons bool                         `json:"enableDebugStockWeapons"`
+	EquipmentAvatarsList    map[string]map[string]string `json:"equipmentAvatarsList"`
+	Teams                   map[string]TD_User_Team      `json:"teams"`
+	IDolClasses             map[string]string            `json:"idolClasses"`
+	FavoriteCharacterId     string                       `json:"favoriteCharacterId"`
 }
 
 func GenearateLogin(decodedMDDir string, cfg LoginResponseGeneratorConfig) *LoginResponse {
@@ -333,6 +334,9 @@ func (l *loginResponseGenerator) createWeaponUIDToWeaponMap(inWeapons []MD_Weapo
 			panic(err)
 		}
 		if weapon.ItemType != 1 {
+			continue
+		}
+		if !l.cfg.EnableDebugStockWeapons && (strings.Contains(weapon.Name, "デバッグ") || strings.Contains(weapon.Name, "ストック")) {
 			continue
 		}
 		skillID1 := " "
