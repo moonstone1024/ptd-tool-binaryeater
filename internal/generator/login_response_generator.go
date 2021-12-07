@@ -890,10 +890,6 @@ func (l *loginResponseGenerator) getUserAchievement() map[string]TD_UserAchievem
 
 	achievements := map[string]TD_UserAchievement{}
 	for _, inAchievement := range inAchievements {
-		if inAchievement.Category != 1 {
-			continue
-		}
-
 		achievementID := "Achievement::" + inAchievement.ID
 		achievements[achievementID] = TD_UserAchievement{
 			AchievementDate:     l.cfg.ServerTime.Format(serverTimeFormat),
