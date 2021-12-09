@@ -271,7 +271,7 @@ func (l *loginResponseGenerator) createCostumeUIDToCostumeMap(inCostumes []MD_Co
 
 	index := 0
 	costumes := map[string]TD_User_Costume{}
-	t := l.cfg.ServerTime.Time
+	t := l.cfg.ServerTime.Time.Add(time.Duration(-24) * time.Hour)
 	for _, costume := range inCostumes {
 		costumeUID, err := h.Encode([]int{index})
 		index++
@@ -326,7 +326,7 @@ func (l *loginResponseGenerator) createWeaponUIDToWeaponMap(inWeapons []MD_Weapo
 
 	index := 0
 	weapons := map[string]TD_UserWeapon{}
-	t := l.cfg.ServerTime.Time
+	t := l.cfg.ServerTime.Time.Add(time.Duration(-24) * time.Hour)
 	for _, weapon := range inWeapons {
 		weaponUID, err := h.Encode([]int{index})
 		index++
@@ -889,10 +889,11 @@ func (l *loginResponseGenerator) getUserAchievement() map[string]TD_UserAchievem
 	l.loadMDJson("MD_Achievement.json", &inAchievements)
 
 	achievements := map[string]TD_UserAchievement{}
+	t := l.cfg.ServerTime.Time.Add(time.Duration(-24) * time.Hour)
 	for _, inAchievement := range inAchievements {
 		achievementID := "Achievement::" + inAchievement.ID
 		achievements[achievementID] = TD_UserAchievement{
-			AchievementDate:     l.cfg.ServerTime.Format(serverTimeFormat),
+			AchievementDate:     t.Format(serverTimeFormat),
 			Category:            1,
 			ResetDayOfWeek:      1,
 			ConditionId:         inAchievement.ConditionID,
@@ -901,6 +902,7 @@ func (l *loginResponseGenerator) getUserAchievement() map[string]TD_UserAchievem
 			MasterName:          "Achievement",
 			MasterAchievementId: inAchievement.ID,
 		}
+		t = t.Add(time.Duration(1) * time.Second)
 	}
 
 	return achievements
