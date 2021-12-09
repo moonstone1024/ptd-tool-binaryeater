@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Number",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_QuestStageMasterName",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_QuestMasterName",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_StarRewardMasterName",
+      "include": true
+    },
+    {
+      "type": "DateTime",
+      "name": "_ReleaseDate",
+      "include": true
+    },
+    {
+      "type": "DateTime",
+      "name": "_CloseDate",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_CampaignFlag",
+      "include": true
+    }
+  ]
+}

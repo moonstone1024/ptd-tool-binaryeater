@@ -132,6 +132,19 @@ func (m *mdLoader) loadField(field MDField) (interface{}, error) {
 			entries[i] = entry
 		}
 		return entries, nil
+	case "DateTime":
+		count, err := binary.ReadUvarint(m.byteReader)
+		if err != nil {
+			pos, _ := m.byteReader.Seek(0, io.SeekCurrent)
+			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read DateTime string length for %s at %d", field.Name, pos))
+		}
+		b := make([]byte, count)
+		_, err = io.ReadAtLeast(m.byteReader, b, int(count))
+		if err != nil {
+			pos, _ := m.byteReader.Seek(0, io.SeekCurrent)
+			return nil, errors.Wrap(err, fmt.Sprintf("Failed to read DateTime value for %s at %d", field.Name, pos))
+		}
+		return string(b), nil
 	}
 
 	return nil, errors.Errorf("Unknown field type: %s", field.Type)
