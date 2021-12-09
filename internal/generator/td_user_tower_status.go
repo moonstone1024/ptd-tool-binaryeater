@@ -1,7 +1,7 @@
 package generator
 
 type TD_UserTowerStatus struct {
-	ResetData string                    `json:"rd"`
+	ResetDate string                    `json:"rd"`
 	Data      TD_UserTowerStatus_MyData `json:"dt"`
 }
 

@@ -870,7 +870,7 @@ func (l *loginResponseGenerator) getUserTowerStatus() map[string]TD_UserTowerSta
 	sort.Strings(stageIDs)
 
 	statusEntry := TD_UserTowerStatus{
-		ResetData: l.cfg.ServerTime.Time.Add(time.Duration(2) * time.Hour).Format(serverTimeFormat),
+		ResetDate: l.cfg.ServerTime.Time.Add(time.Duration(2) * time.Hour).Format(serverTimeFormat),
 		Data: TD_UserTowerStatus_MyData{
 			SeasonID:         "S202109xx",
 			QuestStageID:     lastTowerQuest.StageID,
