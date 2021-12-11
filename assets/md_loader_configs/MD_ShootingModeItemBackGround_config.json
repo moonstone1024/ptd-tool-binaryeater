@@ -36,7 +36,8 @@
     },
     {
       "type": "int",
-      "name": "_IsDefault"
+      "name": "_IsDefault",
+      "include": true
     }
   ]
 }

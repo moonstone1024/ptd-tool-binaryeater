@@ -954,12 +954,13 @@ func (l *loginResponseGenerator) getUserShootingModeItemForType(filename string)
 	items := make([]MD_ShootingModeItem, 0)
 	l.loadMDJson(filename, &items)
 
-	itemIDs := make([]string, len(items))
-	for i, item := range items {
-		if item.ID == "" {
-			panic(errors.New(filename))
+	itemIDs := make([]string, 0)
+	for _, item := range items {
+		if item.IsDefault == 1 {
+			continue
 		}
-		itemIDs[i] = item.ID
+
+		itemIDs = append(itemIDs, item.ID)
 	}
 
 	return itemIDs
