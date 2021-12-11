@@ -1,0 +1,10 @@
+- repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+  rev: 2.3.54
+  hooks:
+  - id: editorconfig-checker
+    alias: ec
+- repo: https://github.com/tekwizely/pre-commit-golang
+  rev: v1.0.0-beta.4
+  hooks:
+  - id: go-fmt
+  - id: go-mod-tidy
