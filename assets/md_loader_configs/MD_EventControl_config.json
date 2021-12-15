@@ -1,0 +1,139 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_EventType",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_EventControlID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Name",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Bg",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Bunner",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_TransitType",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_MasterName1",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_MasterName2",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_MasterName3",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_MasterName4",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_MasterName5",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_ADVTitleMasterName",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter1",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter2",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter3",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter4",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter5",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter6",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter7",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter8",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_Parameter9",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_FirstNoticePicture",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_FirstNoticeText",
+      "include": true
+    },
+    {
+      "type": "DateTime",
+      "name": "_ReleaseDate",
+      "include": true
+    },
+    {
+      "type": "DateTime",
+      "name": "_CloseDate",
+      "include": true
+    },
+    {
+      "type": "DateTime",
+      "name": "_EventCloseDate",
+      "include": true
+    }
+  ]
+}
