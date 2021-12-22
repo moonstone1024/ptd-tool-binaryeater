@@ -151,7 +151,7 @@ func (l *loginResponseGenerator) generate() *LoginResponse {
 				WeaponLimitBreakItem:   "{}",
 				CostumeLimitBreakItem:  "[]",
 				CostumeAwakeItem:       "[]",
-				QuestTicketItem:        "{}",
+				QuestTicketItem:        "{\"QT_BB0021\":100}",
 				CostumeTradeDollsPoint: "{}",
 				CostumeStone:           "{}",
 				WeaponStone:            "{}",
