@@ -45,6 +45,7 @@ func (l *loginResponseGenerator) generate() *LoginResponse {
 	inMemoryLocks := l.loadCharacterMemoryLocks()
 	inCostumeStones := l.loadCostumeStones()
 	inWeaponStones := l.loadWeaponStones()
+	inGiftItems := l.loadGiftItems()
 	serverTimeText := l.cfg.ServerTime.Format(serverTimeFormat)
 	serverTimeStamp := l.cfg.ServerTime.Unix()
 	resp := &LoginResponse{
@@ -145,7 +146,7 @@ func (l *loginResponseGenerator) generate() *LoginResponse {
 				UserGachaTicket:        "{}",
 				BoostItem:              "[]",
 				TradeItem:              "{}",
-				GiftItem:               "{}",
+				GiftItem:               l.getGiftItemsAsString(inGiftItems),
 				RecaptureItem:          l.getRecaptureItemsAsString(inMemoryLocks),
 				WeaponMaterial:         "{}",
 				WeaponLimitBreakItem:   "{}",
@@ -926,6 +927,12 @@ func (l *loginResponseGenerator) loadWeaponStones() []MD_WeaponStone {
 	return weaponStones
 }
 
+func (l *loginResponseGenerator) loadGiftItems() []MD_GiftItem {
+	giftItems := make([]MD_GiftItem, 0)
+	l.loadMDJson("MD_GiftItem.json", &giftItems)
+	return giftItems
+}
+
 func (l *loginResponseGenerator) getRecaptureItemsAsString(inMemoryLocks []MD_CharacterMemoryLock) string {
 	items := map[string]int{}
 	for _, memoryLock := range inMemoryLocks {
@@ -964,4 +971,19 @@ func (l *loginResponseGenerator) getUserShootingModeItemForType(filename string)
 	}
 
 	return itemIDs
+}
+
+func (l *loginResponseGenerator) getGiftItemsAsString(inGiftItems []MD_GiftItem) string {
+	giftItems := map[string]int{}
+
+	for _, v := range inGiftItems {
+		giftItems[v.ID] = 100
+	}
+
+	bytes, err := json.Marshal(giftItems)
+	if err != nil {
+		panic(err)
+	}
+
+	return string(bytes)
 }
