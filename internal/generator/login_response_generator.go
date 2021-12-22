@@ -49,7 +49,6 @@ func (l *loginResponseGenerator) generate() *LoginResponse {
 	serverTimeText := l.cfg.ServerTime.Format(serverTimeFormat)
 	serverTimeStamp := l.cfg.ServerTime.Unix()
 	resp := &LoginResponse{
-		ServerTime: serverTimeText,
 		ResponseParameter: LoginResponseParameter{
 			ClassUpdate: map[string]int{
 				"o": 11,
