@@ -16,7 +16,7 @@ type TD_User struct {
 	PlayQuestId         string `json:"pQId"`
 	PlayQuestMasterName string `json:"pQNm"`
 	PlayQuestTeamNumber string `json:"pQTNm"`
-	PlayerQuest         string `json:"pqe"`
+	PlayerQuestEnemies  string `json:"pqe"`
 	PlayQuestSupporter  int    `json:"pqSpt"`
 	PlayerQuestBuf      string `json:"pqBf"`
 	PlayQuestContinue   int    `json:"pqCon"`

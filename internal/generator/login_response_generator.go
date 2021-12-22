@@ -87,7 +87,7 @@ func (l *loginResponseGenerator) generate() *LoginResponse {
 				PlayQuestId:            "",
 				PlayQuestMasterName:    " ",
 				PlayQuestTeamNumber:    " ",
-				PlayerQuest:            "[]",
+				PlayerQuestEnemies:     "[]",
 				PlayQuestSupporter:     -1,
 				PlayerQuestBuf:         "[]",
 				PlayQuestContinue:      0,
