@@ -60,4 +60,5 @@ var questGroupIDs = []string{
 	"ScenarioQuest4",
 	"ScenarioQuest5",
 	"ScenarioQuest6",
+	"NRMQuest0001",
 }

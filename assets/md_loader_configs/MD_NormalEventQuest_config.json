@@ -1,0 +1,332 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Sort"
+    },
+    {
+      "type": "string",
+      "name": "_QuestName",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_IdentificationID"
+    },
+    {
+      "type": "string",
+      "name": "_BGGraphicID"
+    },
+    {
+      "type": "string",
+      "name": "_RecommendLv"
+    },
+    {
+      "type": "int",
+      "name": "_Difficulty"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseQuestMasterName"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseQuestID"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseMemoryID1"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseMemoryID2"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseMemoryID3"
+    },
+    {
+      "type": "int",
+      "name": "_Stamina"
+    },
+    {
+      "type": "int",
+      "name": "_StaminaRateMax"
+    },
+    {
+      "type": "string",
+      "name": "_VPAccelTicketID"
+    },
+    {
+      "type": "int",
+      "name": "_VPAccelTicketStaminaRateMax"
+    },
+    {
+      "type": "int",
+      "name": "_Retry"
+    },
+    {
+      "type": "int",
+      "name": "_IsRecordQuestResult"
+    },
+    {
+      "type": "int",
+      "name": "_FriendControl"
+    },
+    {
+      "type": "int",
+      "name": "_RequireLv"
+    },
+    {
+      "type": "string",
+      "name": "_RequireCharacterID1"
+    },
+    {
+      "type": "string",
+      "name": "_RequireCharacterID2"
+    },
+    {
+      "type": "int",
+      "name": "_ContinueMaxCount"
+    },
+    {
+      "type": "DateTime",
+      "name": "_ReleaseDate"
+    },
+    {
+      "type": "DateTime",
+      "name": "_CloseDate"
+    },
+    {
+      "type": "int",
+      "name": "_RealCoinFree"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType1"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID1"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount1"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType2"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID2"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount2"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType3"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID3"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount3"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType4"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID4"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount4"
+    },
+    {
+      "type": "int",
+      "name": "_ItemType5"
+    },
+    {
+      "type": "string",
+      "name": "_ItemID5"
+    },
+    {
+      "type": "int",
+      "name": "_ItemCount5"
+    },
+    {
+      "type": "string",
+      "name": "_QuestMissionID1"
+    },
+    {
+      "type": "string",
+      "name": "_QuestMissionID2"
+    },
+    {
+      "type": "string",
+      "name": "_QuestMissionID3"
+    },
+    {
+      "type": "string",
+      "name": "_EnemyGroupID"
+    },
+    {
+      "type": "string",
+      "name": "_MainScenarioID"
+    },
+    {
+      "type": "string",
+      "name": "_BackGroundID"
+    },
+    {
+      "type": "string",
+      "name": "_BackGroundID_2D"
+    },
+    {
+      "type": "int",
+      "name": "_CostumeExp"
+    },
+    {
+      "type": "int",
+      "name": "_WeaponExp"
+    },
+    {
+      "type": "int",
+      "name": "_Exp"
+    },
+    {
+      "type": "int",
+      "name": "_GameCoin"
+    },
+    {
+      "type": "int",
+      "name": "_FeelA"
+    },
+    {
+      "type": "int",
+      "name": "_FeelB"
+    },
+    {
+      "type": "int",
+      "name": "_FeelC"
+    },
+    {
+      "type": "int",
+      "name": "_FeelD"
+    },
+    {
+      "type": "string",
+      "name": "_EventID"
+    },
+    {
+      "type": "string",
+      "name": "_EventGroupID",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_ClearCount"
+    },
+    {
+      "type": "int",
+      "name": "_ClearCountResetTerm"
+    },
+    {
+      "type": "int",
+      "name": "_AllowRarity"
+    },
+    {
+      "type": "int",
+      "name": "_TurnBonusBase"
+    },
+    {
+      "type": "int",
+      "name": "_TurnBonusRatio"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillReward_S"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillCondition_S"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillReward_A"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillCondition_A"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillReward_B"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillCondition_B"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillReward_C"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillCondition_C"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillReward_D"
+    },
+    {
+      "type": "int",
+      "name": "_OverKillCondition_D"
+    },
+    {
+      "type": "int",
+      "name": "_MaxDamageRatio"
+    },
+    {
+      "type": "int",
+      "name": "_ExtraBonusRatio"
+    },
+    {
+      "type": "int",
+      "name": "_ExtraBonusLimit"
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseGroupID",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_ConsumeType"
+    },
+    {
+      "type": "string",
+      "name": "_ConsumeItemId"
+    },
+    {
+      "type": "int",
+      "name": "_ConsumeItemCount"
+    },
+    {
+      "type": "string",
+      "name": "_CollaborationQuest"
+    }
+  ]
+}
