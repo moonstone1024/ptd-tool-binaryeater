@@ -1,13 +1,14 @@
 # ptd-tool
 
-A tool for decoding/encoding PTD related data files.
+A tool for dealing with PTD related data files.
 Currently it can decode
 
 * MD (stands for Master Data?) files
 * server responses captured with MITM http proxy tools like Burp suite, mitmproxy, etc.
 * Some of save data files in `SaveData` directory. Files with name starting with numbers cannot currently be decoded. pa.ds is a plain BSON file that keeps truck of downloaded asset bundles1.
 
-Encoding save data back to encrypted BSON is also supported.
+Encoding is only supported for save data files.
+Also, login response can be generated using decoded MD data.
 
 Response/MD decryption code is based on esterTion's work here. 
 
@@ -84,8 +85,10 @@ Replace `/path/to/md-dir` with actual md directory path.
 MD_SRC_DIR=/path/to/md-dir/md MD_DEST_DIR=./out/md/ ./generate-md-assets.sh
 ```
 
-Then generate response with this command. Don't send json formatted with jq to the device if you want to use it with ptd-hook. The app does not accept formatted JSON.
+Then generate response with this command. Don't send json formatted with jq to the device if you want to use it with ptd-hook. The app only accepts minified JSON, and does not accept formatted JSON.
+
+You can optionally change costumes, weapons, classes etc of generated response by specifying a different config file.
 
 ```
-./ptd-tool generate-login-response > Login.json
+./ptd-tool generate-login-response --decoded-md-dir ./out/md/ --config ./assets/login-response-generator-config.json > Login.json
 ```
