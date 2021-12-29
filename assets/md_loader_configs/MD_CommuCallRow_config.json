@@ -1,0 +1,144 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "_ID",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_TalkID",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Place",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Trigger",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_TriggerCountLower",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_TriggerCountUpper",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_TimeZone",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Week",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_ReleaseDate",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_CloseDate",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Status",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_IdolClass",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_IdolClassMainFeelLv",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_IdolClassSub1FeelLv",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_IdolClassSub2FeelLv",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_IdolClassPurpleFeelLv",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_FeelALLLower",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_FeelALLUpper",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_Probability",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_AvaterEquippedReaction",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_AvaterEquippedReactionNum",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_AvaterID",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_AvaterMaxRarity",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_VoteFeelLv",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_VoteDollRank",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_VotePlayerRank",
+      "include": true
+    },
+    {
+      "type": "int",
+      "name": "_VoteContinueDays",
+      "include": true
+    },
+    {
+      "type": "string",
+      "name": "_VotePeriod",
+      "include": true
+    }
+  ]
+}
