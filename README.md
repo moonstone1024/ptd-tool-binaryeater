@@ -8,7 +8,7 @@ No support from moonstone1024 will be given for this utility.
 
 binaryeater is no longer contactable. 
 
-All mentions of "I" in the main text will refer to binaryeater/ 
+All mentions of "I" in the main text will refer to binaryeater.
 
 ## Main text begins here
 
