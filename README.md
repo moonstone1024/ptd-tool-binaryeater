@@ -3,10 +3,17 @@
 ## Disclaimer
 
 This tool was provided by binaryeater as-is for free use. moonstone1024 is the relayer for this utility. 
+
 No support from moonstone1024 will be given for this utility. 
+
 binaryeater is no longer contactable. 
 
+All mentions of "I" in the main text will refer to binaryeater/ 
+
+## Main text begins here
+
 A tool for dealing with PTD related data files.
+
 Currently it can decode
 
 * MD (stands for Master Data?) files
@@ -14,6 +21,7 @@ Currently it can decode
 * Some of save data files in `SaveData` directory. Files with name starting with numbers cannot currently be decoded. pa.ds is a plain BSON file that keeps truck of downloaded asset bundles1.
 
 Encoding is only supported for save data files.
+
 Also, login response can be generated using decoded MD data.
 
 Response/MD decryption code is based on esterTion's work here. 
