@@ -1,5 +1,11 @@
 # ptd-tool
 
+## Disclaimer
+
+This tool was provided by binaryeater as-is for free use. moonstone1024 is the relayer for this utility. 
+No support from moonstone1024 will be given for this utility. 
+binaryeater is no longer contactable. 
+
 A tool for dealing with PTD related data files.
 Currently it can decode
 
